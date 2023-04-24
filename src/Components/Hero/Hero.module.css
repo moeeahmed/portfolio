@@ -1,0 +1,12 @@
+.hero__container {
+  background-image: url("../../Assets/SVGs/background.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -95px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero__container {
+    background-size: 400%;
+  }
+}

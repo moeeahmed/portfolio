@@ -1,0 +1,36 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  justify-content: center;
+  margin: 0px;
+}
+
+.contact-btn {
+  margin: 40px 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.contact-btn a {
+  padding: 30px;
+  border: 1px var(--secondary-color) solid;
+  border-radius: 5px;
+  color: var(--secondary-color);
+}
+
+.contact-btn a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+@media only screen and (min-width: 600px) {
+  .contact-section {
+    width: 50vw;
+  }
+}

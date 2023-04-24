@@ -1,0 +1,15 @@
+.mainbody {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainbody {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mainbody {
+    flex-direction: row;
+  }
+}

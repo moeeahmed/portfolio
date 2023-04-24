@@ -1,0 +1,19 @@
+.backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: white;
+  border-radius: 50%;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.backToTop i {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .backToTop {
+    display: none;
+  }
+}

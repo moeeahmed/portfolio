@@ -1,0 +1,26 @@
+.site-header {
+  position: relative;
+  padding: 10px;
+}
+
+.site-header .wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.site-header .wrapper .logo svg {
+  fill: var(--secondary-color);
+  animation: fadeIn 2s;
+  height: 64px;
+  width: 74px;
+}
+
+@media only screen and (min-width: 600px) {
+  .site-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.section--headings {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-block: 10px 40px;
+  width: 100%;
+  font-size: clamp(40px, 5vw, 60px);
+  color: var(--secondary-color);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.section--headings.overline::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--secondary-color);
+}
+
+.sub--headings {
+  color: var(--primary-color);
+  margin: 0;
+}

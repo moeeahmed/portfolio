@@ -1,0 +1,32 @@
+h1.two {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 700;
+}
+
+h1.three {
+  color: #4b75ad;
+}
+
+p.four {
+  padding-top: 20px;
+  width: 350px;
+}
+
+.btn a {
+  border: 1px var(--secondary-color) solid;
+  border-radius: 5px;
+  color: var(--secondary-color);
+}
+
+.btn a:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.btn.github-btn {
+  margin: 70px 10px;
+}
+
+.btn.github-btn a {
+  padding: 30px;
+}

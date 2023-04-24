@@ -1,0 +1,66 @@
+.image {
+  margin: 0 auto;
+}
+
+.image img {
+  object-fit: cover;
+  width: clamp(270px, 40vw, 400px);
+  height: clamp(270px, 40vw, 400px);
+  border-radius: 50%;
+  border: 10px inset var(--secondary-color);
+  box-shadow: 0px 0px 24px 0px var(--secondary-color);
+}
+
+.information .list {
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  padding-left: 30px;
+  margin-bottom: 2vh;
+}
+
+.information .list dl:nth-of-type(1) dd:nth-of-type(1) {
+  list-style-image: url("../../Assets/SVGs/html5.svg");
+}
+
+.information .list dl:nth-of-type(1) dd:nth-of-type(2) {
+  list-style-image: url("../../Assets/SVGs/css3.svg");
+}
+
+.information .list dl:nth-of-type(1) dd:nth-of-type(3) {
+  list-style-image: url("../../Assets/SVGs/javascript.svg");
+}
+
+.information .list dl:nth-of-type(1) dd:nth-of-type(4) {
+  list-style-image: url("../../Assets/SVGs/react.svg");
+}
+
+.information .list dl:nth-of-type(1) dd:nth-of-type(5) {
+  list-style-image: url("../../Assets/SVGs/nodejs.svg");
+}
+
+.information .list dl:nth-of-type(2) dd:nth-of-type(1) {
+  list-style-image: url("../../Assets/SVGs/expressjs.svg");
+}
+
+.information .list dl:nth-of-type(2) dd:nth-of-type(2) {
+  list-style-image: url("../../Assets/SVGs/mongodb.svg");
+}
+
+.information .list dl:nth-of-type(2) dd:nth-of-type(3) {
+  list-style-image: url("../../Assets/SVGs/git.svg");
+}
+
+.information .list dl:nth-of-type(2) dd:nth-of-type(4) {
+  list-style-image: url("../../Assets/SVGs/aws.svg");
+}
+
+.information .list dl:nth-of-type(2) dd:nth-of-type(5) {
+  list-style-image: url("../../Assets/SVGs/python.svg");
+}
+
+@media only screen and (max-width: 600px) {
+  .information .list {
+    justify-content: center;
+  }
+}

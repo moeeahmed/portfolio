@@ -1,0 +1,41 @@
+.splash {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - calc(100vh - 100%));
+  overflow: none;
+}
+
+.splash svg {
+  height: 128px;
+  width: 149px;
+  fill: var(--secondary-color);
+  animation: pulse-black 3s ease-out;
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.85);
+  }
+
+  20% {
+    transform: scale(1);
+  }
+
+  40% {
+    transform: scale(0.85);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.85);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}

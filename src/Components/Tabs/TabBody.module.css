@@ -1,0 +1,36 @@
+.tab-body {
+  display: none;
+  word-wrap: break-word;
+  padding: 0;
+  height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: block;
+}
+
+.tab-body h2 {
+  text-transform: capitalize;
+}
+
+.tab-body ul li {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.tab-body ul li h3 {
+  font-size: 16px;
+}
+
+.tab-body ul li p::before {
+  content: "+";
+  position: absolute;
+  left: 0px;
+  color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .tab-body {
+    height: 300px;
+    overflow-y: auto;
+  }
+}
