@@ -1,5 +1,4 @@
-import React, { useLayoutEffect, useState, useRef } from "react";
-import { gsap } from "gsap";
+import React, { useState, useRef } from "react";
 
 import CV from "../../Assets/CV_latest.pdf";
 
@@ -7,8 +6,6 @@ import classes from "./NavBar.module.css";
 
 const NavBar = () => {
   const [navToggle, setNavToggle] = useState(false);
-  const navRef = useRef();
-  const navListRefs = useRef();
 
   const pages = ["about", "experiences", "projects", "contact"];
 
@@ -16,18 +13,8 @@ const NavBar = () => {
     setNavToggle((prevState) => !prevState);
   };
 
-  useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.to(`.${classes["wrapper"]} ${navToggle ? classes["active"] : ""}`, {
-        rotation: 180,
-      });
-    }, navRef);
-
-    return () => ctx.revert();
-  }, []);
-
   return (
-    <nav ref={navRef} className={classes["nav"]}>
+    <nav className={classes["nav"]}>
       <button
         className={classes["nav__toggle"]}
         onClick={navToggleHandler}
@@ -44,7 +31,6 @@ const NavBar = () => {
         </a>
       </button>
       <ul
-        ref={navListRefs}
         className={`${classes["wrapper"]} ${
           navToggle ? classes["active"] : ""
         }`}
