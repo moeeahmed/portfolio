@@ -7,7 +7,7 @@ export const projectData = [
     ],
     techUsed: ["HTML5", "CSS3", "nodeJS", "expressJS", "mongoose", "mongoDB"],
     githublink: "https://github.com/moeeahmed/premier-league-data",
-    link: "https://www.premier-stats-6f6om1eq9-moeeahmed.vercel.app",
+    link: "https://premier-stats-6f6om1eq9-moeeahmed.vercel.app/",
     screenshot: "footballdata.png",
   },
   {
