@@ -1,10 +1,12 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { gsap } from "gsap";
 
 import CV from "../../Assets/CV_latest.pdf";
 
 import classes from "./NavBar.module.css";
 
 const NavBar = () => {
+  const navBarRef = useRef();
   const [navToggle, setNavToggle] = useState(false);
 
   const pages = ["about", "experiences", "projects", "contact"];
@@ -13,8 +15,23 @@ const NavBar = () => {
     setNavToggle((prevState) => !prevState);
   };
 
+  useEffect(() => {
+    gsap.fromTo(
+      navBarRef.current,
+      {
+        y: -20,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+      }
+    );
+  }, []);
+
   return (
-    <nav className={classes["nav"]}>
+    <nav ref={navBarRef} className={classes["nav"]}>
       <button
         className={classes["nav__toggle"]}
         onClick={navToggleHandler}

@@ -8,6 +8,10 @@
   padding-bottom: 1rem;
 }
 
+.site-header .wrapper .logo {
+  opacity: 0;
+}
+
 .site-header .wrapper .logo svg {
   fill: var(--secondary-color);
   animation: fadeIn 2s;

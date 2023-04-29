@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 import classes from "./Footer.module.css";
 
@@ -8,6 +9,8 @@ import instagram from "../../Assets/SVGs/instagram.svg";
 import ritrue from "../../Assets/SVGs/ritrue.svg";
 
 const Footer = () => {
+  const fixedListRef = useRef();
+
   const links = {
     github: { link: "https://github.com/moeeahmed", logo: Github },
     linkedIn: {
@@ -28,9 +31,22 @@ const Footer = () => {
     );
   });
 
+  useEffect(() => {
+    gsap.fromTo(
+      fixedListRef.current,
+      { opacity: 0, x: -20 },
+      { opacity: 1, x: 0, duration: 1 }
+    );
+  }, []);
+
   return (
     <footer>
-      <ul className={`${classes["fixed-list"]} "fade-in-left" `}>{linksJSX}</ul>
+      <ul
+        ref={fixedListRef}
+        className={`${classes["fixed-list"]} "fade-in-left" `}
+      >
+        {linksJSX}
+      </ul>
 
       <ul className={classes["links"]}>{linksJSX}</ul>
 

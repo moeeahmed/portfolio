@@ -28,7 +28,7 @@ footer .fixed-list {
   position: fixed;
   left: 10px;
   top: 50%;
-
+  opacity: 0;
   list-style: none;
   padding: 0;
 }
