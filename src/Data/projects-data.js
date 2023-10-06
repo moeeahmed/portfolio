@@ -1,5 +1,16 @@
 export const projectData = [
   {
+    title: "NextJS  website",
+    maincontent: [
+      `This project is a one-page website developed with Next.js, Tailwind CSS, and TypeScript for a social media marketing agency. The website serves as a concise hub, detailing the agency's services.`,
+      `It offers a seamless user experience with a responsive design and intuitive navigation, allowing visitors to quickly grasp the agency's offerings and easily get in touch.`,
+    ],
+    techUsed: ["NextJS", "typescript", "tailwind"],
+    githublink: "https://github.com/moeeahmed/RitureSMCC",
+    link: "https://riture-smcc.vercel.app/",
+    screenshot: "nextjs.png",
+  },
+  {
     title: "Premier League API",
     maincontent: [
       `This web application provides football fans with an easy-to-use platform to access the latest Premier League data and statistics, with a responsive and interactive user interface powered by modern web technologies`,

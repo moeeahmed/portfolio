@@ -1,3 +1,9 @@
 .information {
   padding-right: 2vw;
 }
+
+.view_more {
+  cursor: pointer;
+  text-align: center;
+  margin-top: -25px;
+}

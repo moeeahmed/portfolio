@@ -13,34 +13,34 @@ import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
 function App() {
-  const [splash, setSplash] = useState(true);
+  // const [splash, setSplash] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setSplash(false);
-    }, 3000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setSplash(false);
+  //   }, 3000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <React.Fragment>
-      {splash && <Splash />}
+      {/* {splash && <Splash />} */}
 
-      {!splash && (
-        <React.Fragment>
-          <Hero />
-          <Container>
-            <SectionAbout />
-            <SectionExperiences />
-            <SectionProjects />
-            <SectionContact />
-            <Footer />
-            <BackToTop />
-            {!splash && <BackToTop />}
-          </Container>
-        </React.Fragment>
-      )}
+      {/* {!splash && ( */}
+      <React.Fragment>
+        <Hero />
+        <Container>
+          <SectionAbout />
+          <SectionExperiences />
+          <SectionProjects />
+          <SectionContact />
+          <Footer />
+          <BackToTop />
+          {/* {!splash && <BackToTop />} */}
+        </Container>
+      </React.Fragment>
+      {/* )} */}
     </React.Fragment>
   );
 }

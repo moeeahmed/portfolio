@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -12,7 +12,9 @@ import Projects from "../Projects/Project";
 import classes from "./SectionProjects.module.css";
 
 const SectionProjects = () => {
+  const [viewMore, setViewMore] = useState(false);
   const projectsRef = useRef();
+  const projectsLen = projectData.length;
 
   useEffect(() => {
     const projects = projectsRef.current.childNodes;
@@ -35,7 +37,11 @@ const SectionProjects = () => {
         { x: 0, opacity: 1, duration: 2.5 }
       );
     });
-  });
+  }, []);
+
+  const itemsToView = !viewMore ? 3 : projectsLen;
+
+  console.log(itemsToView);
 
   return (
     <Section id="projects-section">
@@ -44,11 +50,18 @@ const SectionProjects = () => {
         <div className={classes["information"]}>
           <ul ref={projectsRef}>
             {projectData.map(
-              (el, index) => index < 3 && <Projects key={index} data={el} />
+              (el, index) =>
+                index < itemsToView && <Projects key={index} data={el} />
             )}
           </ul>
         </div>
       </SectionBody>
+      <p
+        className={classes.view_more} // Ensure correct class name
+        onClick={() => setViewMore(!viewMore)} // Use arrow function for correct behavior
+      >
+        {viewMore ? "View less ▴" : "View more ▾"}
+      </p>
     </Section>
   );
 };
