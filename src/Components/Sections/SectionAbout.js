@@ -12,15 +12,19 @@ const SectionAbout = () => {
     "HTML5",
     "CSS3",
     "Javascript",
-
     "ReactJS",
+    "NextJS",
+    "Tailwindcss",
+
     "NodeJs",
     "Express",
     "MongoDB",
+    "DynamoDB",
 
     "Git",
     "AWS",
     "Python",
+    "Jira",
   ];
 
   const formatList = (arr) => {

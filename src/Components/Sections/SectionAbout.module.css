@@ -36,6 +36,14 @@
 }
 
 .information .list dl:nth-of-type(1) dd:nth-of-type(5) {
+  list-style-image: url("../../Assets/SVGs/nextjs.svg");
+}
+
+.information .list dl:nth-of-type(1) dd:nth-of-type(6) {
+  list-style-image: url("../../Assets/SVGs/tailwind.svg");
+}
+
+.information .list dl:nth-of-type(1) dd:nth-of-type(7) {
   list-style-image: url("../../Assets/SVGs/nodejs.svg");
 }
 
@@ -48,15 +56,23 @@
 }
 
 .information .list dl:nth-of-type(2) dd:nth-of-type(3) {
-  list-style-image: url("../../Assets/SVGs/git.svg");
+  list-style-image: url("../../Assets/SVGs/dynamodb.svg");
 }
 
 .information .list dl:nth-of-type(2) dd:nth-of-type(4) {
-  list-style-image: url("../../Assets/SVGs/aws.svg");
+  list-style-image: url("../../Assets/SVGs/git.svg");
 }
 
 .information .list dl:nth-of-type(2) dd:nth-of-type(5) {
+  list-style-image: url("../../Assets/SVGs/aws.svg");
+}
+
+.information .list dl:nth-of-type(2) dd:nth-of-type(6) {
   list-style-image: url("../../Assets/SVGs/python.svg");
+}
+
+.information .list dl:nth-of-type(2) dd:nth-of-type(7) {
+  list-style-image: url("../../Assets/SVGs/jira.svg");
 }
 
 @media only screen and (max-width: 600px) {
