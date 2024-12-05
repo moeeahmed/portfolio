@@ -19,64 +19,68 @@
   margin-bottom: 2vh;
 }
 
-.information .list dl:nth-of-type(1) dd:nth-of-type(1) {
-  list-style-image: url("../../Assets/SVGs/html5.svg");
+.tech-list {
+  width: 30rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.information .list dl:nth-of-type(1) dd:nth-of-type(2) {
-  list-style-image: url("../../Assets/SVGs/css3.svg");
+.tech-list .inner {
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  animation: loop 10s linear infinite;
 }
 
-.information .list dl:nth-of-type(1) dd:nth-of-type(3) {
-  list-style-image: url("../../Assets/SVGs/javascript.svg");
+.tech-list .inner .tech {
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  background-color: #334155;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.1rem 0.2rem #00000033, 0 0.1rem 0.2rem #0000004d,
+    0 0.2rem 1.5rem #00000066;
 }
 
-.information .list dl:nth-of-type(1) dd:nth-of-type(4) {
-  list-style-image: url("../../Assets/SVGs/react.svg");
+.tech-list .inner .tech span {
+  font-size: 1.2rem;
+  color: #64748b;
 }
 
-.information .list dl:nth-of-type(1) dd:nth-of-type(5) {
-  list-style-image: url("../../Assets/SVGs/nextjs.svg");
+.tech-list .fade {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #001d3d,
+    transparent 30%,
+    transparent 70%,
+    #001d3d
+  );
+  inset: 0;
+  pointer-events: none;
 }
 
-.information .list dl:nth-of-type(1) dd:nth-of-type(6) {
-  list-style-image: url("../../Assets/SVGs/tailwind.svg");
-}
+@keyframes loop {
+  0% {
+    transform: translateX(30%);
+  }
 
-.information .list dl:nth-of-type(1) dd:nth-of-type(7) {
-  list-style-image: url("../../Assets/SVGs/nodejs.svg");
-}
-
-.information .list dl:nth-of-type(2) dd:nth-of-type(1) {
-  list-style-image: url("../../Assets/SVGs/expressjs.svg");
-}
-
-.information .list dl:nth-of-type(2) dd:nth-of-type(2) {
-  list-style-image: url("../../Assets/SVGs/mongodb.svg");
-}
-
-.information .list dl:nth-of-type(2) dd:nth-of-type(3) {
-  list-style-image: url("../../Assets/SVGs/dynamodb.svg");
-}
-
-.information .list dl:nth-of-type(2) dd:nth-of-type(4) {
-  list-style-image: url("../../Assets/SVGs/git.svg");
-}
-
-.information .list dl:nth-of-type(2) dd:nth-of-type(5) {
-  list-style-image: url("../../Assets/SVGs/aws.svg");
-}
-
-.information .list dl:nth-of-type(2) dd:nth-of-type(6) {
-  list-style-image: url("../../Assets/SVGs/python.svg");
-}
-
-.information .list dl:nth-of-type(2) dd:nth-of-type(7) {
-  list-style-image: url("../../Assets/SVGs/jira.svg");
+  100% {
+    transform: translateX(-110%);
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .information .list {
     justify-content: center;
+  }
+
+  .tech-list {
+    width: 95%;
+    margin: 0 auto;
+    padding-block: 20px;
   }
 }

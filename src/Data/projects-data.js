@@ -1,5 +1,15 @@
 export const projectData = [
   {
+    title: "AI Content Generator",
+    maincontent: [
+      `This project is an AI-powered content creation and caption idea generator built with Next.js, Tailwind CSS, and TypeScript`,
+      `The tool assists users in generating creative captions and content ideas for social media marketing, tailored to their specific audience and platform needs`,
+    ],
+    techUsed: ["NextJS", "typescript", "tailwind"],
+    githublink: "https://github.com/moeeahmed/content_gen",
+    screenshot: "creative_gen.jpg",
+  },
+  {
     title: "NextJS  website",
     maincontent: [
       `This project is a one-page website developed with Next.js, Tailwind CSS, and TypeScript for a social media marketing agency. The website serves as a concise hub, detailing the agency's services.`,
@@ -18,7 +28,6 @@ export const projectData = [
     ],
     techUsed: ["HTML5", "CSS3", "nodeJS", "expressJS", "mongoose", "mongoDB"],
     githublink: "https://github.com/moeeahmed/premier-league-data",
-    link: "https://premier-stats.vercel.app/",
     screenshot: "footballdata.png",
   },
   {
@@ -32,7 +41,7 @@ export const projectData = [
     ],
     techUsed: ["HTML5", "CSS3", "nodeJS", "expressJS"],
     githublink: "https://www.github.com/moeeahmed/weather-app",
-    link: "https://dark-jeans-dove.cyclic.app",
+
     screenshot: "weatherapp.png",
   },
   {
@@ -43,7 +52,6 @@ export const projectData = [
     ],
     techUsed: ["HTML5", "CSS3", "Javascript"],
     githublink: "https://www.github.com/moeeahmed/Footuiz",
-    link: "https://www.google.com",
     screenshot: "footuiz.png",
   },
 ];

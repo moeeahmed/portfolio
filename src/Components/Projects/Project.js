@@ -30,11 +30,13 @@ const Project = ({ data }) => {
         </div>
         <div className={classes["project__links"]}>
           <ul>
-            <li>
-              <a href={link} rel="noreferrer" target="_blank">
-                <i className="fa-solid fa-arrow-up-right-from-square" />
-              </a>
-            </li>
+            {link && (
+              <li>
+                <a href={link} rel="noreferrer" target="_blank">
+                  <i className="fa-solid fa-arrow-up-right-from-square" />
+                </a>
+              </li>
+            )}
             <li>
               <a href={githublink} rel="noreferrer" target="_blank">
                 <i className="fa-brands fa-github" />
